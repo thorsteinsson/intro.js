@@ -300,6 +300,7 @@
     var tooltipCssClass = this._options.tooltipClass;
 
     var currentTooltipPosition = this._introItems[this._currentStep].position;
+    tooltipLayer.parentNode.className = 'introjs-helperLayer introjs-' + (currentTooltipPosition || 'bottom');
     switch (currentTooltipPosition) {
       case 'top':
         tooltipLayer.style.left = '15px';
